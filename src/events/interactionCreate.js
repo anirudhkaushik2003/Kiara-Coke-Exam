@@ -28,7 +28,6 @@ module.exports = {
             }
         } else if (interaction.isButton()) {
             if (interaction.customId.includes('-scoreboard')) {
-                j = 1;
                 if (interaction.customId.includes('forward')) {
                     await interaction.message.delete();
                     const exampleEmbed = new MessageEmbed()
